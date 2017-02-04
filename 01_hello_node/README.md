@@ -21,3 +21,7 @@ $ minikube service hello-node
 $ docker build -t hello-node:v2 .
 $ kubectl set image deployment/hello-node hello-node=hello-node:v2
 $ minikube service hello-node
+
+# Terminating
+$ kubectl delete service hello-node
+$ kubectl delete deployment hello-node
